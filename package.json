@@ -13,7 +13,7 @@
     "tachyons": "^4.10.0",
     "whatwg-fetch": "^2.0.4"
   },
-  "homepage": "https://rumi-w-2018.github.io/robo-friends-react-redux",
+  "homepage": "https://rumi-w-2018.github.io/robo-friends-react-redux/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
