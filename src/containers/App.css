@@ -1,0 +1,62 @@
+
+h1.page-title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 3rem;
+    color: rgba(0, 238, 255, 0.932);
+    text-shadow: 4px 4px #333333;
+}
+
+input{
+    background-color: #ffffff;
+}
+
+input:hover {
+    background-color: #E8FDF5;
+}
+
+hr.custom {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 238, 255, 0), rgba(0, 238, 255, 0.75), rgba(0, 238, 255, 0));
+    z-index: 99;
+}
+
+/*fade in*/
+.animation-effect{
+    animation: fadein 0.8s;
+    -moz-animation: fadein 0.8s; /* Firefox */
+    -webkit-animation: fadein 0.8s; /* Safari and Chrome */
+    -o-animation: fadein 0.8s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
