@@ -5,7 +5,7 @@
 ### Application built on React/Redux
 
 #### Demo
-<a href="https://rumi-w-2018.github.io/robo-friends-react-redux/index.html">
+<a href="https://rumi-w-2018.github.io/robo-friends-react-redux/">
 Open Application</a>
 
 
