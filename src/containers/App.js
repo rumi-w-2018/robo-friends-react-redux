@@ -3,6 +3,7 @@ import Cards from '../components/Cards';
 import SearchBox from './SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundary from './ErrorBoundary';
+import Header from './Header';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getRobots } from '../actions'; 
@@ -31,7 +32,7 @@ class App extends Component {
         
         return(
             <div className='animation-effect pv5 ph2 ma0 tc'>
-                <h1 className='page-title mt0 white ttu'>RoboFriends</h1> 
+                <Header />
                 <SearchBox onSearchChange={this.onSearchChange} />
                 <hr className='custom' />
                     <Scroll>

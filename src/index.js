@@ -10,17 +10,18 @@ import './index.css';
 import 'tachyons';
 // Use logger for dev - add to applyMiddleware
 import { createLogger } from 'redux-logger';
+import registerServiceWorker from './registerServiceWorker';
+
 const logger = createLogger();
 
-//import registerServiceWorker from './registerServiceWorker';
-
-const createStoreWithMiddleware = applyMiddleware(promise, thunk, logger)(createStore);
+//const createStoreWithMiddleware = applyMiddleware(promise, thunk, logger)(createStore);
+const store = createStore(reducers, applyMiddleware(promise, thunk, logger));
 
 ReactDOM.render(
-    <Provider store={createStoreWithMiddleware(reducers)} >
+    <Provider store={store} >
         <App />
     </Provider>,
     document.getElementById('root')
 );
 
-//registerServiceWorker();
+registerServiceWorker();

@@ -14,9 +14,7 @@ const Cards = ( { robots } ) => {
     });
 
     return (
-        <div className='white pt4 pb4 pl5 pr5'>
-            <div className='flex flex-wrap justify-center'>{cardList}</div>
-        </div>
+        <div className='flex flex-wrap justify-center'>{cardList}</div>
     );
   
 };

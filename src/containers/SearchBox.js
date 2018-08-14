@@ -19,9 +19,11 @@ class SearchBox extends Component {
     render() {
         return(
             <div className='pa2'>
-                <input className='pa3 ba b--light-green bw1' 
+                <input id="search" className='pa3 ba b--light-green bw1' 
                     type='search' placeholder='Search Robots' 
+                    alt='search'
                     onChange={this.onSearchChange} />
+                
             </div>
         );
     }
