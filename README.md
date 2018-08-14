@@ -1,40 +1,30 @@
- 
-# robo-friends-react-redux  #
+# robo-friends-react-redux (PWA)
 
-
-### Application built on React/Redux
+### Application built on React/Redux - Progressive Web App
 
 #### Demo
+
 <a href="https://rumi-w-2018.github.io/robo-friends-react-redux/">
 Open Application</a>
 
-
 ### Install
-
 
     npm install
 
-### Run ###
+### Run
 
     npm start
 
 To run with REACT_APP_ENV=development.
 
+### Build
 
-
-### Build ###
-
-To build for production. 
+To build for production.
 
     npm run build
 
-
-
-
-Add below to package.json.  This sets the correct root path used in the generated HTML file.
-
+Add below to package.json. This sets the correct root path used in the generated HTML file.
 
     "homepage": ".",
 
 <br>
-
