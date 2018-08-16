@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CounterButton from './CounterButton';
 
 class Header extends Component {
 
@@ -9,7 +10,10 @@ class Header extends Component {
 
     render() {
         return(
-            <h1 className='page-title mt0 white ttu'>RoboFriends</h1> 
+            <div>
+                <h1 className='page-title mt0 white ttu'>RoboFriends</h1> 
+                <CounterButton color={'red'} />
+            </div>
         );
     }
 }

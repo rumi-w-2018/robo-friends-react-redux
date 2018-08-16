@@ -7,7 +7,6 @@ import Header from './Header';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { getRobots } from '../actions'; 
-import 'whatwg-fetch';
 import './App.css';
 
 class App extends Component {

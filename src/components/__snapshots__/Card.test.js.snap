@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expects to render Card component 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="robot"
+          src="https://robohash.org/undefined?size=200x200"
+/>,
+        <div
+          className="pa2 bt b--black-20"
+>
+          <span
+                    className="tc pv1 db bg-animate bg-dark-blue hover-bg-blue white f5 br1"
+                    href="#"
+          >
+                                    
+          </span>
+          <p
+                    className="f6 black mv1"
+          />
+</div>,
+      ],
+      "className": "tc bg-washed-green br3 pa3 ma2 bw2 dib b--black-102 grow",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "robot",
+          "src": "https://robohash.org/undefined?size=200x200",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <span
+              className="tc pv1 db bg-animate bg-dark-blue hover-bg-blue white f5 br1"
+              href="#"
+>
+                              
+</span>,
+            <p
+              className="f6 black mv1"
+/>,
+          ],
+          "className": "pa2 bt b--black-20",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "                ",
+                undefined,
+              ],
+              "className": "tc pv1 db bg-animate bg-dark-blue hover-bg-blue white f5 br1",
+              "href": "#",
+            },
+            "ref": null,
+            "rendered": Array [
+              "                ",
+              undefined,
+            ],
+            "type": "span",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "f6 black mv1",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="robot"
+            src="https://robohash.org/undefined?size=200x200"
+/>,
+          <div
+            className="pa2 bt b--black-20"
+>
+            <span
+                        className="tc pv1 db bg-animate bg-dark-blue hover-bg-blue white f5 br1"
+                        href="#"
+            >
+                                        
+            </span>
+            <p
+                        className="f6 black mv1"
+            />
+</div>,
+        ],
+        "className": "tc bg-washed-green br3 pa3 ma2 bw2 dib b--black-102 grow",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "robot",
+            "src": "https://robohash.org/undefined?size=200x200",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <span
+                className="tc pv1 db bg-animate bg-dark-blue hover-bg-blue white f5 br1"
+                href="#"
+>
+                                
+</span>,
+              <p
+                className="f6 black mv1"
+/>,
+            ],
+            "className": "pa2 bt b--black-20",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "                ",
+                  undefined,
+                ],
+                "className": "tc pv1 db bg-animate bg-dark-blue hover-bg-blue white f5 br1",
+                "href": "#",
+              },
+              "ref": null,
+              "rendered": Array [
+                "                ",
+                undefined,
+              ],
+              "type": "span",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "f6 black mv1",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
