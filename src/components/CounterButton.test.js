@@ -20,3 +20,11 @@ it('correctly increments the cunter', () => {
     expect(wrapper.props().color).toEqual('yellow');
 
 });
+
+it('updates when state changes', () => {
+    const wrapper = shallow(<CounterButton color='yellow'/>);
+    const nextState = { count: 2 };
+    const shouldUpdate = wrapper.instance().shouldComponentUpdate({}, nextState);
+    expect(shouldUpdate).toBe(true);    // false if nextState={count:1}
+
+});
