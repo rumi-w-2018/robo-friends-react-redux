@@ -1,4 +1,8 @@
-import { SET_ROBOTS_SUCCESS, SET_ROBOTS_PENDING, SET_ROBOTS_FAILED } from '../actions';
+import { 
+    SET_ROBOTS_SUCCESS, 
+    SET_ROBOTS_PENDING, 
+    SET_ROBOTS_FAILED 
+} from '../actions/constants';
 
 const initState = {
     isPending: true,

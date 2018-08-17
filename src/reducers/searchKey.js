@@ -1,4 +1,4 @@
-import { SET_SEARCH_KEY } from '../actions';
+import { SET_SEARCH_KEY } from '../actions/constants';
 
 const searchKey = ( state='', action={} ) => {
     switch(action.type) {
