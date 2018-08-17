@@ -1,14 +1,13 @@
 import { SET_SEARCH_KEY } from '../actions/constants';
 
-const searchKey = ( state='', action={} ) => {
-    switch(action.type) {
+const searchKey = (state = '', action = {}) => {
+  switch (action.type) {
+    case SET_SEARCH_KEY:
+      return action.payload;
 
-        case SET_SEARCH_KEY:
-            return action.payload;
-
-        default:
-            return state;
-    }
+    default:
+      return state;
+  }
 };
 
 export default searchKey;
