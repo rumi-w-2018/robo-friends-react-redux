@@ -1,6 +1,11 @@
 # robo-friends-react-redux (PWA)
 
-### Application built on React/Redux - Progressive Web App
+### Application built on React/Redux <br>
+
+Includes:
+
+- Unit tests
+- Progressive Web App features
 
 #### Demo
 
