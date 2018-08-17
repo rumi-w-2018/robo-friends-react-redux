@@ -1,10 +1,6 @@
-import "whatwg-fetch";
+import 'whatwg-fetch';
 
-import {
-  SET_ROBOTS_SUCCESS,
-  SET_ROBOTS_PENDING,
-  SET_ROBOTS_FAILED
-} from "./constants";
+import { SET_ROBOTS_SUCCESS, SET_ROBOTS_PENDING, SET_ROBOTS_FAILED } from './constants';
 
 const setRobotsPending = data => ({
   type: SET_ROBOTS_PENDING,
@@ -29,24 +25,19 @@ const setRobotsFailed = data => ({
 */
 export const getRobots = () => dispatch => {
   dispatch(setRobotsPending([]));
-  fetch("https://jsonplaceholder.typicode.com/users")
+  return fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => {
       //console.log('response', response);
       if (response.ok) {
-        return response;
+        //return response;
+        dispatch(setRobotsSuccess(response.json()));
+      } else {
+        console.log('Error');
+        dispatch(setRobotsFailed([]));
       }
-      console.log("Error");
-      dispatch(setRobotsFailed([]));
-    })
-    .then(response => {
-      return response.json();
-    })
-    .then(json => {
-      //console.log('json', json);
-      dispatch(setRobotsSuccess(json));
     })
     .catch(error => {
-      console.log("Error", error);
+      console.log('Error', error);
       dispatch(setRobotsFailed([]));
     });
 };
