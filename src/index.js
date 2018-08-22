@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './containers/App';
-import { Provider } from 'react-redux';     // Provider passes Store to containers
+import { Provider } from 'react-redux'; // Provider passes Store to containers
 import { createStore, applyMiddleware } from 'redux';
 import promise from 'redux-promise';
 import thunk from 'redux-thunk';
@@ -18,10 +18,10 @@ const logger = createLogger();
 const store = createStore(reducers, applyMiddleware(promise, thunk, logger));
 
 ReactDOM.render(
-    <Provider store={store} >
-        <App />
-    </Provider>,
-    document.getElementById('root')
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
 );
 
 registerServiceWorker();
