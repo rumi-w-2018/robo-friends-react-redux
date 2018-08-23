@@ -14,11 +14,11 @@ const mapStateToProps = ({ robots, searchKey }) => {
   return { robots, searchKey };
 };
 
-const mapDispatcherToProps = dispatch => {
+const mapDispatchToProps = dispatch => {
   return bindActionCreators({ getRobots }, dispatch);
 };
 
 export default connect(
   mapStateToProps,
-  mapDispatcherToProps
+  mapDispatchToProps
 )(App);
